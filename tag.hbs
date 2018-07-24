@@ -12,7 +12,7 @@
                 {{#if description}}
                     {{description}}
                 {{else}}
-                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+                    {{plural ../pagination.total empty=(t "A collection of posts") singular=(t "A collection of 1 post") plural=(t "A collection of % posts")}}
                 {{/if}}
             </h2>
         </div>
@@ -21,7 +21,7 @@
 {{/tag}}
 
 {{!-- The main content area --}}
-<main id="site-main" class="site-main outer" role="main">
+<main id="site-main" class="site-main outer">
     <div class="inner">
         <div class="post-feed">
             {{#foreach posts}}

@@ -1,3 +1,31 @@
+# WorldCasper2
+
+WorldCasper2 is [Casper 2.x](https://github.com/TryGhost/Casper), [Ghost](https://github.com/TryGhost/Ghost)'s default theme, made translatable into any language.
+
+For example, in _.hbs_ theme templates:
+```
+{{t "Get the latest posts delivered right to your inbox"}}
+```
+
+Currently available languages:
+
+- Chinese (`zh`)
+- English (`en`)
+- Finnish (`fi`)
+- French (`fr`)
+- German (`de`)
+- Romanian (`ro`)
+- Spanish (`es`)
+- Swedish (`sv`)
+
+The master branch is Casper.
+
+The translatable branch is [i18n-translatable-frontend](https://github.com/juan-g/WorldCasper2/tree/i18n-translatable-frontend).
+
+For Casper 1.4 made translatable, see [WorldCasper1](https://github.com/juan-g/WorldCasper1).
+
+Details in Ghost's blog post [Theme translations and blog localisation](https://dev.ghost.org/theme-translations/).
+
 # Casper
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
@@ -35,8 +63,8 @@ One really neat trick is that you can also create custom one-off templates just 
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need Node and Gulp installed globally. After that, from the theme's root directory:
 
 ```bash
-$ npm install
-$ gulp
+$ yarn install
+$ yarn dev
 ```
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
@@ -44,7 +72,7 @@ Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/
 The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
 
 ```bash
-$ gulp zip
+$ yarn zip
 ```
 
 # PostCSS Features Used
